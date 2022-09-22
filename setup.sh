@@ -64,7 +64,7 @@ rm mr-coxall_checks.xml
 sudo rm -R ~/dotfiles
 
 mkdir ~/ICS4U
-mkdir ~/ICS4U/Unit1/Unit1-02
+mkdir -p ~/ICS4U/Unit1/Unit1-02
 mkdir ~/ICS4U/Unit1/Unit1-03
 mkdir ~/ICS4U/Unit1/Unit1-04
 mkdir ~/ICS4U/Unit1/Unit1-05
