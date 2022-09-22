@@ -27,7 +27,7 @@ read any_key
 ssh -T git@github.com
 
 # NeoVim
-sudo apt-get install -y ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg config unzip curl doxygen
+sudo apt-get install -y ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen
 git clone https://github.com/neovim/neovim
 cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
@@ -39,8 +39,8 @@ cp ~/dotfiles/.bashrc ~/.bashrc
 # Typel script
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "NVIM_DIR/nvm.sh" #loads vim
-[ -s "$NVM_DIR/bash_completion" ] && \. "NVIM_DIR/bash_completion" #loads
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVIM_DIR/nvm.sh" #loads vim
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVIM_DIR/bash_completion" #loads
 nvm install node --lst
 nvm install-latest-npm
 
