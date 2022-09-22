@@ -39,8 +39,8 @@ cp ~/dotfiles/.bashrc ~/.bashrc
 # Typel script
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVIM_DIR/nvm.sh" #loads vim
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVIM_DIR/bash_completion" #loads
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" #loads vim
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" #loads
 nvm install node --lst
 nvm install-latest-npm
 
