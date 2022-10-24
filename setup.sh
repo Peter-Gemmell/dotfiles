@@ -36,7 +36,7 @@ cd ..
 echo Load .bashrc file
 cp ~/dotfiles/.bashrc ~/.bashrc
 
-echo load nvim options
+echo Load nvim options
 cp -r ~/dotfiles/config ~/.config
 
 # Typel script
@@ -62,6 +62,11 @@ wget https://raw.githubusercontent.com/Mr-Coxall/dot_files/main/mr-coxall_checks
 cp ./mr-coxall_checks.xml ~/scripts/
 rm checkstyle-10.3.3-all.jar
 rm mr-coxall_checks.xml
+
+# github repo
+sudo apt install gh -y 
+gh auth login
+echo "gh repo create ics4u-Unit#-##-typescript --public --gitignore "Node" --add-readme --clone"
 
 # rid of dotfiles
 sudo rm -R ~/dotfiles
