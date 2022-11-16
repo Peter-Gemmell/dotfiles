@@ -39,3 +39,8 @@ runts() {
 rules() { 
      printf "g \nts \nrunts\n"
 }
+
+createRepo() {
+    echo "~/scripts/repo.sh ics4u-UnitY-XX-typescript Node"
+    echo "~/scripts/repo.sh ics4u-UnitY-XX-java Java"
+}
